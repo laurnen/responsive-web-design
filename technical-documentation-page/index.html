@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Java Technical Documentation Page</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Java For Beginners</header>
+      <a class="nav-link" href="#introduction">Introduction</a>
+      <a class="nav-link" href="#hello_world">Hello World</a>
+      <a class="nav-link" href="#variables">Variables</a>
+      <a class="nav-link" href="#data_types">Data Types</a>
+      <a class="nav-link" href="#conditional_statements_and_loops">Conditional Statements and Loops</a>
+      <a class="nav-link" href="#methods">Methods</a>
+      <a class="nav-link" href="#references">References</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="introduction">
+        <header><h2>Introduction</h2></header>
+        <p>Java is an object-oriented programming language created in 1995. It is similar to C and C++, and used widely in the programming world making it one of the most popular programming languages in the world.</p>
+        <p>It is used in:</p>
+        <ul>
+          <li>Mobile applications (especially Android apps)</li>
+          <li>Desktop applications</li>
+          <li>Web applications</li>
+          <li>Web servers and application servers</li>
+          <li>Games (e.g. Minecraft)</li>
+          <li>Database connection</li>
+          <li>And more!</li>
+        </ul>
+      </section>
+      <section class="main-section" id="hello_world">
+        <header><h2>Hello World</h2></header>
+        <p>It's time to write your first program in Java!</p>
+        <p>You can create your java file using any text editor. Let's name ours <strong>main.java</strong>.
+        <p>The following code will print out "Hello World" to the terminal:</p>
+          <code><pre>public class Main {
+   public static void main(String[] args) {
+       System.out.println("Hello World");
+    }
+} </pre>
+          </code>
+      </section>
+      <section class="main-section" id="variables">
+        <header><h2>Variables</h2></header>
+        <p>In Java, there are different types of variables. For example:</p>
+        <ul>
+          <li>String: stores text, e.g. "hello"</li>
+          <li>int: stores integers, e.g. 1, 2, 3...</li>
+          <li>float: stores floating point numbers with decimals, e.g. 1.253, 2.653</li>
+          <li>char: stores single characters, e.g. 'a', 'C'</li>
+          <li>boolean: stores true or false values</li>
+        </ul>
+        <p>You can declare variables in Java:</p>
+        <code><pre>type variableName = value;</pre></code>
+        <p>Storing a variable name as another value will overwrite the variable. For example: </p>
+        <code><pre>int myNum = 15;
+myNum = 20;</pre></code>
+        <p>The variable myNum is now 20.</p>
+        <p>You can declare a variable as "final" or "constant", which makes the variable unchangeable.</p>
+        <code><pre>final int myNum2 = 55;
+myNum2 = 65;</pre></code>
+        <p>This will generate an error because myNum2 cannot be changed.</p>
+      </section>
+      <section class="main-section" id="data_types">
+        <header><h2>Data Types</h2></header>
+        <p>Data types in Java can be divided into two groups:</p>
+        <ul>
+          <li><strong>Primitive</strong> data types: includes byte, short, int, long, float, double, boolean and char</li>
+          <li><strong>Non-Primitive</strong> data types: e.g. Strings, Arrays, Classes</li>
+        </ul>
+        <div class="sub-section" id="primitive-data-types">
+          <h3>Primitive Data Types</h3>
+          <p>A primitive data type has a specified size and type of variable values, and it has no additional methods.</p>
+          <p>There are 8 primitive data types in Java.</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Data Type</th>
+                <th>Size</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="data-type">byte</td>
+                <td class="size">1 byte</td>
+                <td class="description">Stores whole numbers from -128 to 127</td>
+              </tr>
+              <tr>
+                <td class="data-type">short</td>
+                <td class="size">2 bytes</td>
+                <td class="description">Stores whole numbers from -32,768 to 32,767</td>
+              </tr>
+              <tr>
+                <td class="data-type">int</td>
+                <td class="size">4 bytes</td>
+                <td class="description">Stores whole numbers from -2,147,483,648 to 2,147,483,647</td>
+              </tr>
+              <tr>
+                <td class="data-type">long</td>
+                <td class="size">8 bytes</td>
+                <td class="description">	Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</td>
+              </tr>
+              <tr>
+                <td class="data-type">float</td>
+                <td class="size">4 bytes</td>
+                <td class="description">Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits</td>
+              </tr>
+              <tr>
+                <td class="data-type">double</td>
+                <td class="size">8 bytes</td>
+                <td class="description">Stores fractional numbers. Sufficient for storing 15 decimal digits</td>
+              </tr>
+              <tr>
+                <td class="data-type">boolean</td>
+                <td class="size">1 bit</td>
+                <td class="description">	Stores true or false values</td>
+              </tr>
+              <tr>
+                <td class="data-type">char</td>
+                <td class="size">2 bytes</td>
+                <td class="description">	Stores a single character/letter or ASCII values</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="sub-section" id="non-primitive-data-types">
+          <h3>Non-Primitive Data Types</h3>
+          <p>Non-primitive data types are not defined by Java, rather, they are defined by the programmer.</p>
+          <p>Non-primitive data types can be used to call methods to perform certain operations.</p>
+          <p>In Java convention, non-primitive data types start with an uppercase letter (e.g. String) while primitive data types start with lowercase.</p>
+        </div>
+      </section>
+      <section class="main-section" id="conditional_statements_and_loops">
+        <header><h2>Conditional Statements and Loops</h2></header>
+        <div class="sub-section" id="conditional-statements">
+          <h3>Conditional Statements</h3>
+          <p>You can use <span class="italic">if else</span> statements to execute code under certain conditions. The following conditional statements can be used:</p>
+          <ul>
+            <li><span class="italic">if:</span> to specify a block of code to be executed, if a specified condition is true.</li>
+            <li><span class="italic">else:</span> to specify a block of code to be executed, if the same condition is false.</li>
+            <li><span class="italic">else if:</span> to specify a new condition to test, if the first condition is false.</li>
+            <li><span class="italic">switch:</span> to specify many alternative blocks of code to be executed.</li>
+          </ul>
+          <p><span class="italic">if else</span> statements can be used as such:</p>
+          <code>
+            <pre>if (condition) {
+  // block of code to be executed if the condition is true
+ }
+else if (condition) {
+  //code
+}
+else {
+   //code to be executed if neither of the above conditions are true
+ }</pre>
+          </code>
+          <p><span class="italic">switch</span> statements can be used as such:</p>
+          <code>
+            <pre>switch(expression) {
+ case x:
+   // code block
+   break;
+ case y:
+   // code block
+   break;
+ default:
+   // code block
+}</pre>
+          </code>
+          <p><span class="italic">switch</span> statements can be used in place of writing many <span class="italic">if else</span> statements.</p>
+        </div>
+        <div class="sub-section" id="loops">
+          <h3>Loops</h3>
+          <h4>While Loops</h4>
+          <p>The while loop loops through a block of code as long as a certain condition is true.</p>
+          <code>
+            <pre>while (condition) { 
+  //code 
+}</pre>
+          </code>
+          <h4>For Loops</h4>
+          <p>The for loop loops through a block of code for a series of statements. Usually, a for loop is used when you want to specify how many times the loop should run.</p>
+          <code>
+            <pre>for (statement 1; statement 2; statement 3) { 
+  // code 
+}</pre>
+          </code>
+        </div>
+        <p>It is also possible to put a loop inside of a loop. These are called <strong>nested loops.</strong></p>
+      </section>
+      <section class="main-section" id="methods">
+        <header><h2>Methods</h2></header>
+        <p>A method is a block of code which only runs when it is called. It takes in some parameter(s) (input), and passes an output of a specified type. Methods are also known as functions.</p>
+        <p>A method must be declared inside a Class.</p>
+        <code>
+          <pre>public class Main {
+   static void myMethod() {
+     // code to be executed
+   }
+}</pre>
+        </code>
+        <p>This code declares a method myMethod() which takes no parameters and outputs a type void, or nothing. It has been declared inside the public class Main.</p>
+      </section>
+      <section class="main-section" id="references">
+        <header><h2>References</h2></header>
+        <ul>
+          <li>All of the documentation on this page is taken from <a href="https://www.w3schools.com/java/java_methods.asp">W3 Schools.</a></li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
