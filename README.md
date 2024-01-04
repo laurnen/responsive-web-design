@@ -6,3 +6,5 @@ Survey Form | Objective: Build an app that is functionally similar to https://su
 Tribute Page | Objective: Build an app that is functionally similar to https://personal-portfolio.freecodecamp.rocks.
 
 Technical Documentation Page | Objective: Build an app that is functionally similar to https://technical-documentation-page.freecodecamp.rocks.
+
+Product Landing Page | Objective: Build an app that is functionally similar to https://product-landing-page.freecodecamp.rocks. 
